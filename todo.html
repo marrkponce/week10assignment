@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <section class="vh-100" style="background-color: #e2d5de;">
+        <div class="container py-5 h-10">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-xl-10">
+      
+              <div class="card" style="border-radius: 15px;">
+                <div class="card-body p-5">
+      
+                  <h6 class="mb-3">Awesome Todo List</h6>
+      
+                  <form class="d-flex justify-content-center align-items-center mb-4">
+                    <div class="form-outline flex-fill">
+                      <label class="form-label" for="form3" >What do you need to do today?</label>
+                        <input type="text"  class="form-control form-control-lg" id="new-task" placeholder="Enter Task" />
+                    </div>
+                    <button id="add" class="btn btn-primary btn-lg ms-2">Add</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <table id="list" class="table table-dark table-solid">
+                <tr>
+                    <th>Task</th>
+                    <th>Actions</th>
+                </tr>
+            
+            </table>
+        </div>
+      </section>
+
+
+
+    <script src="todo.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
